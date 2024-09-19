@@ -1,0 +1,75 @@
+/* Contenedor del formulario para centrarlo vertical y horizontalmente */
+.page-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;     /* Centrar verticalmente */
+    height: 100vh;           /* Altura del viewport */
+    margin: 0;
+  }
+  
+  /* Estilo del formulario con borde y padding */
+  .custom-form {
+    width: 100%;
+    max-width: 400px; /* Ancho máximo del formulario */
+    padding: 20px;
+    border: 2px solid #3498db; /* Borde azul */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Fondo claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+    
+  /* Estilo para los grupos de formulario */
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo del campo de texto */
+  .input-text {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+    
+  .input-text:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+    
+  /* Alinear label e input horizontalmente para el checkbox */
+  .form-group.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio debajo del grupo */
+  }
+  
+  /* Estilo del checkbox */
+  .input-checkbox {
+    margin-left: 5px; /* Espacio entre el checkbox y el label */
+  }
+  
+  /* Estilo del label del checkbox */
+  .checkbox-label {
+    margin-right: 0; /* Eliminar margen derecho del label */
+  }
+    
+  /* Estilo del botón de envío */
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0; /* Centra el botón */
+  }
+    
+  .submit-button:hover {
+    background-color: #2980b9; /* Color al pasar el ratón */
+  }

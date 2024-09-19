@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <h1 class="text-center">Productos de Inventario</h1>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Producto</th>
+        <th scope="col">Reutilizable</th>
+        <th scope="col">Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let Productos of productos; let i = index">
+        <td [ngClass]="{ 'poco': Productos.amount < 25 }">{{ Productos.description }}</td>
+
+        @if (Productos.reusable) {
+        <td [ngClass]="{ 'poco': Productos.amount < 25 }">Si</td>
+        } @else {
+        <td [ngClass]="{ 'poco': Productos.amount < 25 }">No</td>
+        }
+        <td [ngClass]="{ 'poco': Productos.amount < 25 }" >{{ Productos.amount }}</td>
+      
+        
+        
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-primary" (click)="toggleForm()">Consultar</button>
+</div>

@@ -1,0 +1,19 @@
+<div class="page-container">
+  <form class="custom-form">
+
+    <div class="form-group">
+      <label for="nombre">Producto:</label>
+      <input  type="text" id="nombre" name="nombre" [(ngModel)]="nombre" placeholder="Ingresa el nombre del objeto (no marca)" class="input-text">
+    </div>
+    
+
+    <div class="form-group checkbox-group">
+      <label for="reutilizable" class="checkbox-label">Reutilizable:</label>
+      <input type="checkbox" id="reutilizable" name="reutilizable" [(ngModel)]="reusable" class="input-checkbox">
+    </div>
+  
+
+    <button type="button" (click)="enviarFormulario()" class="submit-button">Enviar</button>
+  </form>
+</div>
+  
